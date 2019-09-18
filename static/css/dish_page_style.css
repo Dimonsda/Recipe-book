@@ -1,0 +1,43 @@
+.header
+{
+    background-image: none;
+}
+
+div.search_and_add
+{
+    background: blue;
+    top: 56px;
+    height: 50px;
+    z-index: 1029;
+}
+
+p
+{
+    font-family: 'Charm', cursive;
+}
+
+div.content
+{
+    position: relative;
+    top: 109px;
+}
+
+h4
+{
+    color: #fff;
+}
+
+#back-top
+{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1030;
+}
+
+.color-link
+{
+    color: #ffffff;
+    background: #0000ff;
+    cursor: pointer;
+}

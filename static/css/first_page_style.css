@@ -1,0 +1,62 @@
+.navbar
+{
+    background: #57c206;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    z-index: 1030;
+}
+
+.nav-link , .navbar-brand
+{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link
+{
+    margin-right: 1em !important;
+}
+
+.nav-link:hover
+{
+    background: #f4f4f4;
+    color: #f97300;
+}
+
+.navbar-collapse
+{
+    justify-content: flex-end;
+}
+
+.navbar-toggler
+{
+    background:#fff !important;
+}
+
+.header
+{
+    background-image: url('../img/background_first_page.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay
+{
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.15);
+}
+
+.description
+{
+    position: relative;
+    top: 200px;
+}
+
+.description p
+{
+    font-size: 20px;
+    line-height: 1.5;
+}

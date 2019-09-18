@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>{{title}}</title>
+    {% endblock %}
+
+    {% block connect_css_and_js %}
+    <!-- {% assets 'jquery_custom_scripts' %}
+        <script src="{{ASSET_URL}}"></script>
+    {% endassets %} -->
+    <script>{% include 'jquery_custom_scripts.js' %}</script>
+    <link href="https://fonts.googleapis.com/css?family=Charm|Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/libs/bootstrap_css/bootstrap.css')}}">
+    <!-- {% assets 'popper_bootstrap_jquery-confirm_js' %}
+        <script src="{{ASSET_URL}}"></script>
+    {% endassets %} -->
+    <script>{% include 'popper_bootstrap_jquery-confirm.js' %}</script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    {% assets 'jquery-confirm_fontawesome_custom_css' %}
+    <link rel="stylesheet" href="{{ASSET_URL}}">
+    {% endassets %}
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    {% block variable_css_and_js %}
+    {% endblock %}
+    {% endblock %}
+</head>
+<body>
+{% block navigation %}
+<nav class="navbar navbar-expand fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{url_for('show_first_page')}}">Кулинарная книга</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <script src="//megatimer.ru/get/d16023b37aa6e118f6df441a039877e2.js"></script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Блюда
+                    <b class="caret"></b>
+                </a>
+                {% block nav_menu %}
+                <div class="dropdown-menu">
+                    {% for type in types_of_dish %}
+                    <a class="dropdown-item" href="{{type.value[1]}}">{{type.value[0]}}</a>
+                    {% endfor %}
+                </div>
+                {% endblock %}
+            </div>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                Напитки
+                <b class="caret"></b>
+            </a>
+            <a class="nav-link" data-value="conclusion" href="{{url_for('show_about')}}">О проекте</a>
+            <a class="nav-link" data-value="conclusion" href="{{url_for('show_reg')}}">Регистрация</a>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{% block header %}
+<header class="header">
+    <div class="overlay">
+        {% block content %}
+        <div class="container">
+            <div class="row text-center description">
+                <h3>
+                    <font color="black">
+                        Добро пожаловать на сайт "CookBook"!!!
+                        <p>Здесь вы найдете множество различных рецептов! Надеюсь, что вы найдете блюда, которые придутся вам по душе!</p>
+                    </font>
+                </h3>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+</header>
+{% endblock %}
+
+{% block modal_windows %}
+{% endblock %}
+</body>
+</html>

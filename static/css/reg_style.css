@@ -1,0 +1,92 @@
+.basedkun{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.koptuzkadumon {
+  width: 409px;
+  margin: 0 auto;
+  background: #f1efef;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.koptuzkadumon .beloatescom {
+  color: #3b53dc;
+  font-size: 31px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 9px 0 14px;
+}
+
+.mingbod-kupdate{
+  width: 100%;
+}
+
+.mingbod-kupdate .gesotenal{
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid rgba(14, 14, 14, 0.25);
+  background: none;
+  padding: 10px;
+}
+
+.kocustom {
+  background: #1b6669;
+  color: #f9f9f9;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  letter-spacing: 3px;
+  font-size: 17px;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px rgba(84, 84, 84, 0.48), 0px 3px 11px 1px rgba(90, 90, 90, 0.54);
+}
+
+.kocustom:hover {
+background: #156123;
+  }
+
+.detumokab{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.detumokab .geteknos a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #f9f8f8;
+  color: #153f5d;
+}
+
+.koptuzkadumon:before{
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid #f1efef;
+  border-left: 205px solid transparent;
+  border-right: 205px solid transparent;
+}
+
+.koptuzkadumon:after{
+  content: "";
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  border-top: 80px solid #f1efef;
+  border-bottom: 80px solid transparent;
+  border-left: 205px solid transparent;
+  border-right: 205px solid transparent;
+}
