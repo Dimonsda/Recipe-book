@@ -1,6 +1,5 @@
 """Модуль для обработки ошибок на веб-страницах"""
 from flask import render_template
-from flask_wtf.csrf import CSRFError
 
 from server import APP
 
@@ -17,7 +16,7 @@ def internal_server_error(error):
     return render_template('500.html', reason=error.description), 500
 
 
-@APP.errorhandler(CSRFError)
-def handle_csrf_error(error):
-    """Эта функция обрабатывает ошибку CSRF валидации"""
-    return render_template('csrf_error.html', reason=error.description), 400
+#@APP.errorhandler(CSRFError)
+#def handle_csrf_error(error):
+#    """Эта функция обрабатывает ошибку CSRF валидации"""
+#    return render_template('csrf_error.html', reason=error.description), 400

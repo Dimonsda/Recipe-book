@@ -6,7 +6,7 @@ basedir = path.abspath(path.dirname(__file__))
 class Config(object):
     """Основной класс конфигурации"""
     DEBUG = False
-    CSRF_ENABLED = True
+    #CSRF_ENABLED = True
     WTF_CSRF_SECRET_KEY = 'dffgrtrw45'
     SECRET_KEY = 'NotTellAnyone'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + path.join(basedir, 'cooking_book.db')

@@ -6,15 +6,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Регистрация</title>
+    <title>Вход</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/reg_style.css') }}">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 
+
+
 <section class="container">
     <div class="login">
-        <h1>Регистрация</h1>
+        <h1>Войти</h1>
         <form method="post" action="">
             <p><input type="text" name="username" value="" placeholder="Логин"></p>
             <p><input type="password" name="password" value="" placeholder="Пароль"></p>
@@ -24,10 +26,14 @@
                     Запомнить меня
                 </label>
             </p>
-            <p class="submit"><input type="submit" name="commit" value="Зарегистрироваться"></p>
+            <p class="submit"><input type="submit" name="commit" value="Войти"></p>
         </form>
     </div>
 
+    <div class="login-help">
+        <a class="nav-link" data-value="conclusion" href="{{url_for('show_reg')}}">Регистрация</a>
+    </div>
+    {% if message %}<p><i style="font-size: 18px; color: Orange">{{ message }}</i></p>{% endif %}
 </section>
 </body>
 </html>
