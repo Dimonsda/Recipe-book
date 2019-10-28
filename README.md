@@ -5,7 +5,7 @@
            
 [Trello](https://trello.com/b/sdIx8Wc5/recipe-book)
 
-[miro](https://miro.com/welcomeonboard/E4643hbjohYiG4F6GG7aMRRtDu0S8aoqjqdMYhNtO2zV4w1l3cjBbeC1V7FPBRFi)
+[miro](https://miro.com/app/board/o9J_kxmExNQ=/)
 
 [План тестирования](https://docs.google.com/spreadsheets/d/1y3UEcfGLu6rZXd-xpsN-ShCddkv71tWB_M8Fygr6XrY/edit?usp=sharing)
 
